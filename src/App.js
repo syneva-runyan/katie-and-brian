@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Carousel from './Components/Carousel';
+import Nav from './Components/Nav';
 import './App.css';
+import './Components/Nav';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Katie and Brian</h1>
       </header>
+      <Carousel
+        images={['./images/kiss.png', './images/heartWallKiss.png', './images/dance.png']}
+      />
+      <h4 className="date">September 5, 2020 | Peachtree City, Georgia</h4>
+      <Nav />
     </div>
   );
 }

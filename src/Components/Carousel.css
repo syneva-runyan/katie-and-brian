@@ -1,0 +1,29 @@
+.slick-slider {
+    box-shadow: black 0px 0px 3px 0;
+    margin: auto;
+    margin-top: -81px;
+    max-width: 700px;
+    width: 75%;
+    z-index: 1;
+}
+
+.slick-slide {
+    max-height: 65vh;
+}
+
+@media (max-width:450px)  {
+    .slick-slider {
+        margin-top: -38px;
+        width: 100%;
+    }
+
+    .slick-slide {
+        align-items: center;
+        display: flex !important;
+        max-height: 45vh;
+    }
+
+    .slick-slide img {
+        width: 120%;
+    }
+}
