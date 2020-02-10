@@ -17,7 +17,7 @@ function EventInfo() {
                     </li>
                     <li>
                         <p>
-                            <strong><a href="https://www.instagram.com/franciscus/?hl=en"  target="_blank" rel="noreferrer noopener">Ceremony</a></strong>
+                            <strong>Ceremony</strong>
                             <br/> 
                             <span className="eventInfoDetailsText">
                                 <a href="http://www.holytrinityparish.net/"  target="_blank" rel="noreferrer noopener">Holy Trinity Catholic Church</a>
