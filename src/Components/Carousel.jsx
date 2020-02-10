@@ -6,7 +6,8 @@ import './Carousel.css';
 
 function Carousel({ images }) {
     var settings = {
-       // autoplay: true,
+        adaptiveHeight: true,
+        autoplay: true,
         class: 'carousel',
         dots: true,
         fade: true,
@@ -16,13 +17,15 @@ function Carousel({ images }) {
         slidesToScroll: 1
       };
     return (
-        <Slider {...settings}>
-            {images.map(img => (
-                <div key={img}>
-                    <img alt={img} src={img} />
-                </div>
-            ))}
-        </Slider>
+        <div className="carousel">
+            <Slider {...settings}>
+                {images.map(img => (
+                    <div key={img}>
+                        <img alt={img} src={img} />
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 }
 

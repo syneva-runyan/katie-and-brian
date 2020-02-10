@@ -1,4 +1,4 @@
-.slick-slider {
+.carousel .slick-slider {
     box-shadow: black 0px 0px 3px 0;
     margin: auto;
     margin-top: -81px;
@@ -7,23 +7,28 @@
     z-index: 1;
 }
 
-.slick-slide {
+.carousel .slick-slide {
     max-height: 65vh;
 }
 
+.carousel .slick-slide img {
+    width: 101%;
+}
+
 @media (max-width:450px)  {
-    .slick-slider {
-        margin-top: -38px;
+    .carousel .slick-slider {
+        box-shadow: none;
+        margin-top: -47px;
         width: 100%;
     }
 
-    .slick-slide {
+    .carousel .slick-slide {
         align-items: center;
         display: flex !important;
         max-height: 45vh;
     }
 
-    .slick-slide img {
+    .carousel .slick-slide img {
         width: 120%;
     }
 }

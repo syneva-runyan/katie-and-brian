@@ -1,21 +1,52 @@
 import React from 'react';
-import Carousel from './Components/Carousel';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Intro from './blocks/Intro';
+import EventInfo from './blocks/EventInfo';
 import Nav from './Components/Nav';
 import './App.css';
-import './Components/Nav';
+import MasonryGrid from './Components/MasonryGrid';
+import shuffle from 'shuffle-array';
+import ComingSoon from './Components/ComingSoon';
+import OurStory from './blocks/OurStory';
+
+// example photo gallery images
+let images = [];
+for(let i = 0; i< 50; i++){
+	images.push(`./images/photo-gallery/${i}.jpg`);
+}
+
+shuffle(images);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Katie and Brian</h1>
-      </header>
-      <Carousel
-        images={['./images/kiss.png', './images/heartWallKiss.png', './images/dance.png']}
-      />
-      <h4 className="date">September 5, 2020 | Peachtree City, Georgia</h4>
-      <Nav />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Intro />
+          </Route>
+        </Switch>
+        <Nav />
+        <Switch>
+          <Route path="/event-info">
+            <EventInfo />
+          </Route>
+          <Route path="/our-story">
+            <OurStory />
+          </Route>
+          <Route path="/photos">
+            <MasonryGrid breakPoints={[350, 500, 750]} images={images} />
+          </Route>
+          <Route path="/registry">
+            <ComingSoon />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
