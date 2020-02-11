@@ -52,7 +52,7 @@
         flex-direction: column;
         padding: 0;
         align-items: center;
-        position: absolute;
+        position: fixed;
         right: -100%;
         right: -100%;
         background-color: white;

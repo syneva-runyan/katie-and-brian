@@ -50,3 +50,7 @@ p {
       padding-top: 25px;
     }
 }
+
+* {
+  border: 1px solid red;
+}
