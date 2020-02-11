@@ -76,4 +76,8 @@ p.ourStory__content {
     {
         height: 110% !important;
     }
+
+    .ourStory {
+        margin-bottom: 250px;
+    }
 }

@@ -50,12 +50,15 @@ function MasonryGrid({ breakPoints, images }) {
 	}
 
 	function afterOpenModal() {
+		document.getElementById("root").classList.add("lock");
 		// references are now sync'd and can be accessed.
 		//subtitle.style.color = '#f00';
 	}
 
 	function closeModal(){
 		setIsOpen(false);
+		document.getElementById("root").classList.remove("lock");
+
 	}
 
 	return (
