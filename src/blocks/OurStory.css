@@ -43,7 +43,6 @@ p.ourStory__content {
 
 .react-parallax-bgimage {
     height: 100% !important;
-    margin-top: 50px;
 }
 
 .react-parallax-content {
@@ -53,6 +52,10 @@ p.ourStory__content {
     position: relative;
     width: 100%;
     z-index: 1;
+}
+
+.ourStory__hero--final  .react-parallax-bgimage {
+    height: 95% !important;
 }
 
 .ourStory__hero--final {
@@ -71,7 +74,6 @@ p.ourStory__content {
     }
     .react-parallax-bgimage
     {
-        height: 105% !important;
-        margin-top: 60px;
+        height: 110% !important;
     }
 }

@@ -2,31 +2,97 @@
  * Code credited to https://codepen.io/golle404/pen/wWoXwz
  */
 
-import React, { Component } from "react";
+import React, { Fragment, useState } from "react";
+import Modal from 'react-modal';
 import { debounce } from "lodash";
 import './MasonryGrid.css';
 
-class MasonryGrid extends Component {
-	render(){
-		return (
+Modal.setAppElement('#root');
+
+const customStyles = {
+	border: "0",
+	content : {
+		top                   : '50%',
+		left                  : '50%',
+		right                 : 'auto',
+		bottom                : 'auto',
+		marginRight           : '-50%',
+		transform             : 'translate(-50%, -50%)',
+		width: '90vw',
+		height: '90vh',
+		display: 'flex',
+		alignItems: "center",
+		justifyContent: "center",
+		background: "transparent",
+		border: '0',
+	}
+};
+
+function MasonryGrid({ breakPoints, images }) {
+	const [modalIsOpen,setIsOpen] = useState(false);
+	const [selectedImgIdx, setSelectedImgIdx] = useState(null);
+	function openModal(imgIdx) {
+		setSelectedImgIdx(imgIdx);
+		setIsOpen(true);
+	}
+
+	function incSelectedImg() {
+		const newImgIdx = (selectedImgIdx + 1) % images.length;
+		setSelectedImgIdx(newImgIdx);
+	}
+
+	function decSelectedImg() {
+		let newImgIdx = (selectedImgIdx - 1);
+		if(newImgIdx < 0) {
+			newImgIdx = images.length -1;
+		}
+		setSelectedImgIdx(newImgIdx);
+	}
+
+	function afterOpenModal() {
+		// references are now sync'd and can be accessed.
+		//subtitle.style.color = '#f00';
+	}
+
+	function closeModal(){
+		setIsOpen(false);
+	}
+
+	return (
+		<Fragment>
+			<Modal
+				isOpen={modalIsOpen}
+				onAfterOpen={afterOpenModal}
+				onRequestClose={closeModal}
+				style={customStyles}
+				contentLabel="Example Modal"
+			>
+				<button className="modal-close reset-button" onClick={closeModal}></button>
+				<img className="modal-img" alt="src" src={images[selectedImgIdx]}></img>
+				<button className="reset-button left-arrow" onClick={decSelectedImg}></button>
+				<button className="reset-button right-arrow" onClick={incSelectedImg}></button>
+			</Modal>
 			<div className="container">
 				<div className="masonry-container">
-					<Masonry breakPoints={this.props.breakPoints}>
-						{this.props.images.map((image, id) => {
+					<Masonry breakPoints={breakPoints}>
+						{images.map((image, idx) => {
 							return (
-								<Tile src={image} key={image} />
+								<Tile imgIdx={idx} onClick={openModal} src={image} key={image} />
 							) 
 						})}
 					</Masonry>
 				</div>
 			</div>
-		)
-	}
+		</Fragment>
+	)
 }
 
-const Tile = ({src}) => {
+const Tile = ({onClick, src, imgIdx}) => {
+  const onClickFn =  () => {
+	  onClick(imgIdx);
+  }
   return (
-    <div className="tile">
+    <div className="tile" onClick={onClickFn}>
 		<img src={src} alt={src} />
 	</div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import "./OurStory.css";
 
 export default function OurStory() {
@@ -10,7 +10,7 @@ export default function OurStory() {
             <Parallax
                 bgImage={require('../images/dc2.png')}
                 bgImageAlt="DC fairy tale"
-                strength={200}
+                strength={25}
             >
                 <img
                     alt="DC Fairytale"
@@ -24,9 +24,10 @@ export default function OurStory() {
             <strong>CoffeeMeetsBagel.</strong>
             </p>
             <Parallax
-                bgImage={require('../images/coffeeMeetBagel.jpg')}
+                className="ourStory__hero--coffeeBagel"
+                bgImage={require('../images/coffeeMeetBagel.png')}
                 bgImageAlt="DC fairy tale"
-                strength={200}
+                strength={20}
             >
                 <img
                     alt="DC Fairytale"
@@ -36,9 +37,9 @@ export default function OurStory() {
             </Parallax>
             <p className="ourStory__content">After exchanging some flirtatious banter online, the two decided to meet in person for drinks. They almost missed their chance to connect on their first date when Katie and Brian stood next to each other at the bar for several minutes without realizing the person next to them was their date, but they eventually figured it out. </p>
             <Parallax
-                bgImage={require('../images/banter.jpg')}
+                bgImage={require('../images/banter.png')}
                 bgImageAlt="DC fairy tale"
-                strength={200}
+                strength={20}
             >
                 <img
                     alt="DC Fairytale"
@@ -51,7 +52,7 @@ export default function OurStory() {
             className="ourStory__hero--final"
                 bgImage={require('../images/kiss2.jpg.png')}
                 bgImageAlt="DC fairy tale"
-                strength={200}
+                strength={10}
             >
                 <img
                     alt="DC Fairytale"

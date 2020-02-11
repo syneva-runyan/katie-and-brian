@@ -44,6 +44,7 @@
     background: rgba(0, 0, 0, 0.57);
     z-index: 1;
     transition: 0.25s;
+    top: 0;
 }
 
 @media (max-width: 650px)  {
@@ -61,6 +62,7 @@
         transition: 0.25s;
         margin: 0;
         z-index: 3;
+        top: 0;
     }
 
     .nav--expanded {
@@ -76,7 +78,22 @@
     }
 
     .navMobileCTA {
+        color: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        text-shadow: none;
+        -ms-filter: none;
+        filter: none;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        background-image: url('../images/hamburger.png');
+        background-size: 100%;
         display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
 
     .navBackground--expanded {

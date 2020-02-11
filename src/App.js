@@ -35,6 +35,12 @@ function App() {
           <Route path="/event-info">
             <EventInfo />
           </Route>
+          <Route path="/accomodations">
+            <ComingSoon />
+          </Route>
+          <Route path="/wedding-party">
+            <ComingSoon />
+          </Route>
           <Route path="/our-story">
             <OurStory />
           </Route>

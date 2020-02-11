@@ -43,3 +43,87 @@
 .tile:hover img {
 	transform: scale(1.1);
 }
+
+.reset-button {
+	cursor: pointer;
+	background-color: transparent;
+	background-size: 100%;
+	border: 0;
+    -webkit-appearance: none;
+    text-shadow: none;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    opacity: 0.85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	transition: 0.25s;
+}
+
+.left-arrow, .right-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.left-arrow {
+	background-image: url('../images/arrow.png') ;
+	left: 10px;
+	transform: translateY(-50%);
+}
+
+.right-arrow {
+	background-image: url('../images/arrow.png') ;
+	transform: rotate(180deg) translateY(100%);
+	right: 10px;
+}
+
+.modal-close {
+	background-image: url('../images/close.png') ;
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    cursor: pointer;
+	background-color: transparent;
+	background-image: url('../images/close.png') ;
+	background-size: 100%;
+}
+
+.reset-button:hover {
+	opacity: 1;
+	filter: none;
+}
+.modal-content---3pwnC *, .modal-content---3pwnC *:before, .modal-content---3pwnC *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.modal-img {
+	box-shadow: 1px 1px 6px 0px black;
+	max-height: 95%;
+    max-width: 95%;
+}
+
+
+.ReactModal__Overlay {
+	background-color: rgba(103, 103, 103, 0.75) !important;
+	max-width: 100vw;
+}
+
+@media screen and (max-width: 450px) {
+	.modal-close {
+		width: 50px;
+		height: 50px;
+	}
+
+	.ReactModal__Content {
+		width: 100%;
+	}
+}
