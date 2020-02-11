@@ -15,7 +15,7 @@ export default function OurStory() {
                 <img
                     alt="DC Fairytale"
                     className="ourStory__hero"
-                    src="./images/story.png"
+                    src="./images/story2.png"
                 />
             </Parallax>
             <p className="ourStory__content">
@@ -32,7 +32,7 @@ export default function OurStory() {
                 <img
                     alt="DC Fairytale"
                     className="ourStory__hero"
-                    src="./images/story.png"
+                    src="./images/story2.png"
                 />
             </Parallax>
             <p className="ourStory__content">After exchanging some flirtatious banter online, the two decided to meet in person for drinks. They almost missed their chance to connect on their first date when Katie and Brian stood next to each other at the bar for several minutes without realizing the person next to them was their date, but they eventually figured it out. </p>
@@ -44,7 +44,7 @@ export default function OurStory() {
                 <img
                     alt="DC Fairytale"
                     className="ourStory__hero"
-                    src="./images/story.png"
+                    src="./images/story2.png"
                 />
             </Parallax>
             <p className="ourStory__content">The two connected over their mutual love of travel, regaling each other with stories of backpacking in foreign lands (Katie through Turkey and Brian in Southeast Asia). While both tried to play it cool at first, in the following months their bond deepened and<br/> <strong>they fell in love.</strong></p>
@@ -57,7 +57,7 @@ export default function OurStory() {
                 <img
                     alt="DC Fairytale"
                     className="ourStory__hero"
-                    src="./images/story.png"
+                    src="./images/story2.png"
                 />
             </Parallax>
         </div>
