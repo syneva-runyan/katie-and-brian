@@ -12,7 +12,7 @@ function Intro() {
             <Carousel
                 images={['./images/dance2.png', './images/photo-gallery/4.jpg', './images/heartWallKiss.png']}
             />
-            <h4 className="date">September 5, 2020 | <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=7tV2b6rpBYk">Peachtree City, Georgia</a></h4>
+            <h4 className="date">September 5, 2020 <span className="seperator">|</span> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=7tV2b6rpBYk">Peachtree City, Georgia</a></h4>
         </div>
     );
 }
