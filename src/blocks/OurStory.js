@@ -19,7 +19,7 @@ export default function OurStory() {
                 />
             </Parallax>
             <p className="ourStory__content">
-                in September 2015. Brian had just moved to the area from New Jersey, while Katie was well established in the city.
+            ...in September 2015. Brian had just moved to the area from New Jersey, while Katie was well established in the city.
             Being two single twenty-somethings in DC, they first encountered each other on a dating app called<br /> 
             <strong>CoffeeMeetsBagel.</strong>
             </p>
