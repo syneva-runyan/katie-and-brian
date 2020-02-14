@@ -46,7 +46,10 @@ p {
       min-height: 100vh;
     }
     .date {
-      font-size: 20px;
+      font-size: 1.8rem;
       padding-top: 25px;
+    }
+    .date a {
+      white-space: pre;
     }
 }

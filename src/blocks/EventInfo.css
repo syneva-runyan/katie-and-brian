@@ -46,6 +46,12 @@
 }
 
 @media (max-width:650px)  {
+    .eventInfoDetails p {
+        margin: 50px 0;
+    }
+    .eventInfoDetailsText {
+        font-size: 1.6rem;
+    }
     .eventInfo .slick-slider {
         width: 100vw;
     }
@@ -63,11 +69,11 @@
         background: none;
     }
     .eventInfoDetails strong {
-        font-size: 14px;
+        font-size: 1.8rem;
     }
 
     .eventInfoDetails ul {
-        padding-bottom: 350px;
+        padding-bottom: 300px;
         background-size: auto 300px;
         background-position: center bottom;
     }

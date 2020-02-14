@@ -67,6 +67,18 @@ p.ourStory__content {
     .ourStory__content {
         padding: 0 15px;
         width: 100%;
+        font-size: 1.8rem;
+        line-height:  2.6rem;
+        
+    }
+    
+    .ourStory__title {
+        font-size: 2.6rem;
+        line-height: 5rem;
+    }
+    .ourStory__content strong {
+        font-size: 2.6rem;
+        line-height: 4rem;
     }
 
     .react-parallax {
@@ -78,6 +90,6 @@ p.ourStory__content {
     }
 
     .ourStory {
-        margin-bottom: 250px;
+        margin-bottom: 50px;
     }
 }
