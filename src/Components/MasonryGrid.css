@@ -41,6 +41,7 @@
 }
 
 .tile:hover img {
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
@@ -66,17 +67,20 @@
 .left-arrow, .right-arrow {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .left-arrow {
 	background-image: url('../images/arrow.png') ;
 	left: 10px;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .right-arrow {
 	background-image: url('../images/arrow.png') ;
+	-webkit-transform: rotate(180deg) translateY(50%);
 	transform: rotate(180deg) translateY(50%);
 	right: 10px;
 }

@@ -3,6 +3,7 @@
  */
 
 import React, { Fragment, useState } from "react";
+import { Swipeable } from 'react-swipeable'
 import Modal from 'react-modal';
 import { debounce } from "lodash";
 import './MasonryGrid.css';
@@ -50,14 +51,12 @@ function MasonryGrid({ breakPoints, images }) {
 	}
 
 	function afterOpenModal() {
-		document.getElementById("root").classList.add("lock");
-		// references are now sync'd and can be accessed.
-		//subtitle.style.color = '#f00';
+		document.body.classList.add("lock");
 	}
 
 	function closeModal(){
 		setIsOpen(false);
-		document.getElementById("root").classList.remove("lock");
+		document.body.classList.remove("lock");
 
 	}
 
@@ -70,10 +69,12 @@ function MasonryGrid({ breakPoints, images }) {
 				style={customStyles}
 				contentLabel="Example Modal"
 			>
-				<button className="modal-close reset-button" onClick={closeModal}></button>
-				<img className="modal-img" alt="src" src={images[selectedImgIdx]}></img>
-				<button className="reset-button left-arrow" onClick={decSelectedImg}></button>
-				<button className="reset-button right-arrow" onClick={incSelectedImg}></button>
+				<Swipeable onSwipedLeft={decSelectedImg} onSwipedRight={incSelectedImg}>
+					<button className="modal-close reset-button" onClick={closeModal}></button>
+					<img className="modal-img" alt="src" src={images[selectedImgIdx]}></img>
+					<button className="reset-button left-arrow" onClick={decSelectedImg}></button>
+					<button className="reset-button right-arrow" onClick={incSelectedImg}></button>
+				</Swipeable>
 			</Modal>
 			<div className="container">
 				<div className="masonry-container">
@@ -91,7 +92,8 @@ function MasonryGrid({ breakPoints, images }) {
 }
 
 const Tile = ({onClick, src, imgIdx}) => {
-  const onClickFn =  () => {
+  const onClickFn =  (e) => {
+	  e.preventDefault();
 	  onClick(imgIdx);
   }
   return (
