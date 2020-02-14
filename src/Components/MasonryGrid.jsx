@@ -68,6 +68,7 @@ function MasonryGrid({ breakPoints, images }) {
 				onRequestClose={closeModal}
 				style={customStyles}
 				contentLabel="Example Modal"
+				shouldCloseOnOverlayClick
 			>
 				<Swipeable onSwipedLeft={decSelectedImg} onSwipedRight={incSelectedImg}>
 					<button className="modal-close reset-button" onClick={closeModal}></button>
