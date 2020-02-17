@@ -110,6 +110,7 @@ class Masonry extends React.Component {
 		this.state = {columns: 1};
 		const onResizeBound = this.onResize.bind(this);
 		this.onResizeDebouced = debounce(onResizeBound, 500);
+		window.scrollTo(0,0);
 	}
 	componentDidMount(){
 		this.onResizeDebouced();
