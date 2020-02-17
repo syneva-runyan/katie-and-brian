@@ -35,4 +35,13 @@
   .seperator {
     display: none;
   }
+
+  .intro {
+    margin-top: -50px;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  .date {
+    padding-top: 0;
+  }
 }
