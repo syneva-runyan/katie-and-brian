@@ -109,6 +109,11 @@
     box-sizing: inherit;
 }
 
+.modal-wrapper {
+	display: flex;
+    justify-content: center;
+}
+
 .modal-img {
 	box-shadow: 1px 1px 6px 0px black;
 	max-height: 95%;
