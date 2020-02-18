@@ -12,6 +12,7 @@ import MasonryGrid from './Components/MasonryGrid';
 import shuffle from 'shuffle-array';
 import ComingSoon from './Components/ComingSoon';
 import OurStory from './blocks/OurStory';
+import Accomodations from './blocks/Accomodations';
 
 // example photo gallery images
 let images = [];
@@ -32,6 +33,7 @@ function App() {
           <Route path="/our-story" />
           <Route path="/photos" />
           <Route path="/registry" />
+          <Route path="/things-to-do" />
           <Route exact path="">
             <Intro />
           </Route>
@@ -42,7 +44,7 @@ function App() {
             <EventInfo />
           </Route>
           <Route path="/accomodations">
-            <ComingSoon />
+            <Accomodations />
           </Route>
           <Route path="/wedding-party">
             <ComingSoon />
@@ -54,6 +56,9 @@ function App() {
             <MasonryGrid breakPoints={[350, 500, 750]} images={images} />
           </Route>
           <Route path="/registry">
+            <ComingSoon />
+          </Route>
+          <Route path="/things-to-do">
             <ComingSoon />
           </Route>
         </Switch>

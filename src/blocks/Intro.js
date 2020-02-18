@@ -10,7 +10,7 @@ function Intro() {
                 <h1 className="introTitle">Katie and Brian</h1>
             </header>
             <Carousel
-                images={['./images/dance2.png', './images/photo-gallery/4.jpg', './images/heartWallKiss.png']}
+                images={['./images/dance2.png', './images/photo-gallery/20.jpg', './images/heartWallKiss.png']}
             />
             <h4 className="date">September 5, 2020 <span className="seperator">|</span> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=7tV2b6rpBYk">Peachtree City, Georgia</a></h4>
         </div>

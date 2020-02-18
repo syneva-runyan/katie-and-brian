@@ -1,9 +1,7 @@
 @import './style/fonts/stylesheet.css';
 
 body {
-  background-image: url('./images/background.png');
-  background-repeat: repeat;
-  background-size: 500px;
+  background-color: rgba(208, 205, 205, 0.12);
   max-width: 100vw;
   overflow-x: hidden;
   position: relative;
@@ -38,6 +36,15 @@ a:hover {
 
 p {
   font-family: 'caladearegular';
+  font-size: 17px;
+  line-height: 1.8rem;
+}
+
+@media (max-width:650px)  {
+  p {
+    font-size: 24px;
+    line-height: 2rem;
+  }
 }
 
 @media screen and (max-width: 450px) {

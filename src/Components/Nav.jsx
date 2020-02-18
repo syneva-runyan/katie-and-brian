@@ -45,6 +45,7 @@ class Carousel extends Component {
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/wedding-party">Wedding Party</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/registry">Registry</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/photos">Photos</NavLink>
+                    <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/things-to-do">Things to do in PTC</NavLink>
                 </div>
                 <button className={`navMobileCTA ${route}`} onClick={this.toggleMenu}>cta</button>
             </div>
