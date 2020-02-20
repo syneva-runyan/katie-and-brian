@@ -7,7 +7,7 @@ import './Carousel.css';
 function Carousel({ images }) {
     var settings = {
         adaptiveHeight: true,
-        autoplay: false, //true,
+        autoplay: true,
         class: 'carousel',
         dots: true,
         fade: true,
