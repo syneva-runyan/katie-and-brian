@@ -27,39 +27,37 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/event-info" />
-          <Route path="/accomodations" />
-          <Route path="/wedding-party" />
-          <Route path="/our-story" />
-          <Route path="/photos" />
-          <Route path="/registry" />
-          <Route path="/things-to-do" />
-          <Route exact path="">
-            <Intro />
-          </Route>
-        </Switch>
-        <Nav />
-        <Switch>
           <Route path="/event-info">
+            <Nav />
             <EventInfo />
           </Route>
           <Route path="/accomodations">
+            <Nav />
             <Accomodations />
           </Route>
           <Route path="/wedding-party">
+            <Nav />
             <ComingSoon />
           </Route>
           <Route path="/our-story">
+            <Nav />
             <OurStory />
           </Route>
           <Route path="/photos">
+            <Nav />
             <MasonryGrid breakPoints={[350, 500, 750]} images={images} />
           </Route>
           <Route path="/registry">
+            <Nav />
             <ComingSoon />
           </Route>
           <Route path="/things-to-do">
+            <Nav />
             <ComingSoon />
+          </Route>
+          <Route exact path="">
+            <Intro />
+            <Nav alwaysExpanded />
           </Route>
         </Switch>
       </div>

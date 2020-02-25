@@ -64,7 +64,7 @@
         margin: 0;
         font-size: 20px;
     }
-    .nav:not(.home) {
+    .nav:not(.alwaysOpen) {
         border: 1px solid #cec5c5;
         position: fixed;
         right: -100%;
@@ -84,7 +84,7 @@
         padding: 15px 0;
     }
 
-    .home .navItem {
+    .alwaysOpen .navItem {
         border-bottom: 1px solid #cec5c5;
         width: 100%;
     }
@@ -93,7 +93,7 @@
         padding-top: 15px;
     }
 
-    .navMobileCTA:not(.home) {
+    .navMobileCTA:not(.alwaysOpen) {
         color: transparent;
         border: 0;
         -webkit-appearance: none;
