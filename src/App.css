@@ -1,14 +1,5 @@
 @import './style/fonts/stylesheet.css';
 
-body {
-  background-color: rgba(208, 205, 205, 0.12);
-  max-width: 1200vw;
-  margin: auto;
-  overflow-x: hidden;
-  position: relative;
-  height: auto;
-}
-
 .lock {
   overflow: hidden;
   /* height: 100vh; */
@@ -21,7 +12,7 @@ body {
 .App {
   color: #2d2d2d;
   font-family: 'slurrynormal';
-  max-width: 1200px;
+  height: 100%;
 }
 
 a {
@@ -39,6 +30,15 @@ p {
   font-family: 'caladearegular';
   font-size: 17px;
   line-height: 1.8rem;
+}
+
+/** fix router to bottom on home page**/
+@media (min-width: 651px) {
+  .intro ~ .navWrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }  
 }
 
 @media (max-width:650px)  {
