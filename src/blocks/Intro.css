@@ -44,5 +44,9 @@
   }
   .date {
     padding-top: 0;
+    font-size: 1.8rem;
+  }
+  .date a {
+    white-space: pre;
   }
 }

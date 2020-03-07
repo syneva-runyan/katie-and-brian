@@ -58,10 +58,7 @@ p {
       padding-top: 75px;
       min-height: 100vh;
     }
-    .date {
-      font-size: 1.8rem;
-      padding-top: 25px;
-    }
+
     .date a {
       white-space: pre;
     }
