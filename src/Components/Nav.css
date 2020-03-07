@@ -47,6 +47,10 @@
     top: 0;
 }
 
+.alwaysOpen {
+    padding:20px 0 5px;
+}
+
 @media (max-width: 900px)  {
     .nav {
         padding-right: 0;
