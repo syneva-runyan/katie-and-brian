@@ -33,6 +33,9 @@
   }
 
 @media screen and (max-width: 450px) {
+  .App-header h1 {
+    line-height: 3;
+  }
   .seperator {
     display: none;
   }
