@@ -58,7 +58,7 @@ class EventInfo extends Component {
                                 <br/>
                                 <span className="eventInfoDetailsText">
                                     Transportation will be provided to and from the{" "}
-                                    <a href="https://www.guestreservations.com/peachtree-city-hotel-38-conference-center/booking?msclkid=8d57f8dad6be1ea23f10a69193dd9040" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a>{" "}
+                                    <a href="https://secure3.hilton.com/en_US/hi/reservation/book.htm?inputModule=HOTEL&ctyhocn=ATLPGHH&spec_plan=RWB&arrival=20200904&departure=20200906&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a>{" "}
                                     and <a href="https://www.daisyhillvenue.com/"  target="_blank" rel="noreferrer noopener">Daisy Hill</a>
                                 </span>
                             </p>
