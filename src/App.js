@@ -13,6 +13,7 @@ import shuffle from 'shuffle-array';
 import ComingSoon from './Components/ComingSoon';
 import OurStory from './blocks/OurStory';
 import Accomodations from './blocks/Accomodations';
+import WeddingParty from './blocks/WeddingParty';
 
 // example photo gallery images
 let images = [];
@@ -37,7 +38,7 @@ function App() {
           </Route>
           <Route path="/wedding-party">
             <Nav />
-            <ComingSoon />
+            <WeddingParty />
           </Route>
           <Route path="/our-story">
             <Nav />

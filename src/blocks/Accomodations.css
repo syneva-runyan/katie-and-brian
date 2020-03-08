@@ -1,8 +1,3 @@
-.accomodationsInfo {
-    padding: 0 15px;
-    margin: 0 55px;
-}
-
 .accomodations__things-to-do:after {
     background-image: url('../images/golf-cart.png');
     content: "";
@@ -11,10 +6,4 @@
     position: absolute;
     background-size: cover;
     margin-left: 5px;
-}
-
-@media (max-width:650px)  {
-    .accomodationsInfo {
-        margin: 0;
-    }
 }
