@@ -48,7 +48,7 @@ class EventInfo extends Component {
                                 <span className="eventInfoDetailsText">
                                     <a href="https://www.daisyhillvenue.com/"  target="_blank" rel="noreferrer noopener">Daisy Hill</a>
                                     <br/>
-                                    5-8pm
+                                    5pm
                                 </span>
                             </p>
                         </li>
