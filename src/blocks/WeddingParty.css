@@ -1,0 +1,88 @@
+.wedding-party {
+    box-shadow: 0px 0px 3px 0px #436191;
+    margin-bottom: 50px;
+}
+.wedding-party-person {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wedding-party-person:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.wedding-party__description {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.wedding-party__spacer {
+    padding-left: 5px;
+}
+
+.wedding-party__description h3,
+.wedding-party__description p {
+    margin: 0;
+}
+
+.wedding-party__img {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 50vw;
+}
+
+.wedding-party__img img {
+    --border-color: rgb(208, 205, 205);
+    border: 2px solid var(--border-color);
+    min-height: 100%;
+    width: 100%;
+}
+.wedding-party__img--dark img {
+    --border-color: rgb(43, 43, 43);
+}
+
+.wedding-party__img-shadow {
+    --box-shadow-color: rgb(208, 205, 205);
+    box-shadow: inset 0px 0px 33px 4px var(--box-shadow-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wedding-party__img-shadow--dark {
+    --box-shadow-color:  rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 450px) {
+    .wedding-party {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .wedding-party__description {
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wedding-party__spacer {
+        display: none;
+    }
+
+    .wedding-party__description p {
+        font-size: 17px;
+        line-height: 1;
+    }
+
+    .wedding-party__img {
+        flex: 2;
+    }
+}

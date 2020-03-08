@@ -15,6 +15,11 @@
   height: 100%;
 }
 
+.contentContainer {
+  padding: 0 15px;
+  margin: 0 55px;
+}
+
 h1 {
   font-family: 'reeyregular';
   line-height: 1.5;
@@ -51,15 +56,14 @@ p {
     font-size: 24px;
     line-height: 2rem;
   }
+  .contentContainer {
+      margin: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
     .App {
       padding-top: 75px;
       min-height: 100vh;
-    }
-
-    .date a {
-      white-space: pre;
     }
 }
