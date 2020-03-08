@@ -17,7 +17,7 @@ import WeddingParty from './blocks/WeddingParty';
 
 // example photo gallery images
 let images = [];
-for(let i = 0; i< 50; i++){
+for(let i = 0; i<= 40; i++){
 	images.push(`./images/photo-gallery/${i}.jpg`);
 }
 
