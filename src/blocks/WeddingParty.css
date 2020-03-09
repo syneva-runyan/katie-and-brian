@@ -1,17 +1,21 @@
 .wedding-party {
-    background-image: url('../images/background.png');
     background-size: cover;
-    box-shadow: 0px 0px 3px 0px #436191;
     display: flex;
     margin-bottom: 50px;
 }
 .wedding-party-person {
     background-image: url('../images/background.png');
     background-size: cover;
-    border-left: 1px solid #d3d3d4;
-    border-right: 1px solid #d3d3d4;
     display: flex;
     justify-content: space-between;
+}
+
+.wedding-party-person--main {
+    box-shadow: 0px 0px 3px 0px #436191;
+    margin-bottom: 15px;
+}
+.wedding-party-person--main .wedding-party__img {
+    width: 50vw;
 }
 
 .wedding-party-person:nth-child(odd) {
@@ -69,14 +73,40 @@
 }
 
 .wedding-party-column {
+    box-shadow: 0px 0px 3px 0px #436191;
+    background-image: url('../images/background.png');
     flex: 1;
+}
+
+.wedding-party:nth-child(2) {
+    margin-right: 15px;
+}
+
+.wedding-party-column:nth-child(3) {
+    margin-left: 15px;
 }
 
 .wedding-party__img-shadow--dark {
     --box-shadow-color:  rgb(0, 0, 0);
 }
 
+.wedding-party-best-honor, .wedding-party-siblings {
+    display: none;
+}
+
 @media screen and (max-width: 450px) {
+    .wedding-party-person.desktop {
+        display: none;
+    }
+    .wedding-party-best-honor, .wedding-party-siblings {
+        box-shadow: 0px 0px 3px 0px #436191;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .wedding-party-column:nth-child(1), .wedding-party-column:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .wedding-party {
         display: block;
         margin-left: -15px;
@@ -102,7 +132,11 @@
         flex: 2;
     }
 
-    .wedding-party-column {
-        width: 100%;
+    .wedding-party-column:nth-child(odd) .wedding-party-person:nth-child(odd) {
+        flex-direction: unset;
+    }
+
+    .wedding-party-column:nth-child(odd) .wedding-party-person:nth-child(even) {
+        flex-direction: row-reverse;
     }
 }
