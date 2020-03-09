@@ -36,34 +36,25 @@ export default function WeddingParty() {
             <h1>Wedding Party</h1>
             <WeddingPartyPerson main name="Katie and Brian" relation="Bride & Groom" imgSrc="../images/weddingParty/katieAndBrian.jpg" />
             <div className="wedding-party">
-                <div className="wedding-party-best-honor wedding-party-column">
-                    <WeddingPartyPerson name="Syneva Runyan" role="Maid of Honor" relation="Katie's Sister" imgSrc="../images/weddingParty/katieAndSyneva.jpg" isDark />
-                    <WeddingPartyPerson name="Joey Remsen" role="Best Man" relation="Jersey Kid" imgSrc="../images/weddingParty/brianAndJoey.jpg" isDark />
-                </div>
+                <h2 className="h1">Groomsmen</h2>
                 <div className="wedding-party-column"> 
-                    <WeddingPartyPerson desktop name="Joey Remsen" role="Best Man" relation="Jersey Kid" imgSrc="../images/weddingParty/brianAndJoey.jpg" isDark />
-                    <WeddingPartyPerson name="Jeff Petillo" relation="High School Friend" imgSrc="../images/weddingParty/jeffAndBrian.jpg" />
-                    <WeddingPartyPerson name="Pramod Thammaiah" relation="Jersey Kid" imgSrc="../images/weddingParty/brianAndPromode.jpg" />
-                    <WeddingPartyPerson name="Tyler Stearns" relation="College Friend/Roommate" imgSrc="../images/weddingParty/tylerAndBrian.jpg" isDark/>
-                    <WeddingPartyPerson desktop name="Benjamin Runyan" relation="New Brother in Law" imgSrc="../images/weddingParty/benji.jpg" />
-                    <WeddingPartyPerson desktop name="Michael Runyan" relation="New Borther in Law" imgSrc="../images/weddingParty/mickey.jpg" isDark />
-                    <WeddingPartyPerson desktop name="Luke Runyan" relation="New Borther in Law" imgSrc="../images/weddingParty/luke.JPG" isDark />
+                    <WeddingPartyPerson name="Joey Remsen" role="Best man" relation="College friend and roomate" imgSrc="../images/weddingParty/brianAndJoey.jpg" isDark />
+                    <WeddingPartyPerson name="Jeff Petillo" relation="High school friend" imgSrc="../images/weddingParty/jeffAndBrian.jpg" />
+                    <WeddingPartyPerson name="Pramod Thammaiah" relation="High school friend" imgSrc="../images/weddingParty/brianAndPromode.jpg" />
+                    <WeddingPartyPerson name="Tyler Stearns" relation="College friend and roommate" imgSrc="../images/weddingParty/tylerAndBrian.jpg" isDark/>
+                    <WeddingPartyPerson name="Benjamin Runyan" relation="New brother-in-law" imgSrc="../images/weddingParty/benji.jpg" />
+                    <WeddingPartyPerson name="Michael Runyan" relation="New brother-in-law" imgSrc="../images/weddingParty/mickey.jpg" isDark />
+                    <WeddingPartyPerson name="Luke Runyan" relation="New brother-in-law" imgSrc="../images/weddingParty/luke.JPG" isDark />
                 </div>
+                <h2 className="h1">Bridesmaids</h2>
                 <div className="wedding-party-column">
-                    <WeddingPartyPerson desktop name="Syneva Runyan" role="Maid of Honor" relation="Katie's Sister" imgSrc="../images/weddingParty/katieAndSyneva.jpg" isDark />
-                    <WeddingPartyPerson name="Annie Kim" relation="Georgia Tech" imgSrc="../images/weddingParty/katieAndAnnie.jpg" isDark />
+                    <WeddingPartyPerson name="Syneva Runyan" role="Maid of honor" relation="Katie's Sister" imgSrc="../images/weddingParty/katieAndSyneva.jpg" isDark />
+                    <WeddingPartyPerson name="Annie Kim" relation="Georgia tech" imgSrc="../images/weddingParty/katieAndAnnie.jpg" isDark />
                     <WeddingPartyPerson name="Courtney Olson" relation="CapOne life" imgSrc="../images/weddingParty/courtneyAndkatie.jpg" />
-                    <WeddingPartyPerson name="Esther Kim" relation="DC Roomate" imgSrc="../images/weddingParty/katieAndEsther.jpg" isDark />
-                    <WeddingPartyPerson name="Heta Jangla" relation="Helluva Engineer" imgSrc="../images/weddingParty/katieAndHeta.jpg" isDark />
-                    <WeddingPartyPerson desktop name="Gabrielle Wickizer" relation="New Sister in Law" imgSrc="../images/weddingParty/gabbyAndKatie.jpg" isDark />
-                    <WeddingPartyPerson desktop name="Gen Wickizer" relation="New Sister in Law" imgSrc="../images/weddingParty/genAndKatie.png" isDark />
-                </div>
-                <div className="wedding-party-column wedding-party-siblings">
-                    <WeddingPartyPerson name="Gabrielle Wickizer" relation="New Sister in Law" imgSrc="../images/weddingParty/gabbyAndKatie.jpg" isDark />
-                    <WeddingPartyPerson name="Benjamin Runyan" relation="New Brother in Law" imgSrc="../images/weddingParty/benji.jpg" />
-                    <WeddingPartyPerson name="Gen Wickizer" relation="New Sister in Law" imgSrc="../images/weddingParty/genAndKatie.png" isDark />
-                    <WeddingPartyPerson name="Michael Runyan" relation="New Borther in Law" imgSrc="../images/weddingParty/mickey.jpg" isDark />
-                    <WeddingPartyPerson name="Luke Runyan" relation="New Borther in Law" imgSrc="../images/weddingParty/luke.JPG" isDark />
+                    <WeddingPartyPerson name="Esther Kim" relation="DC roomate" imgSrc="../images/weddingParty/katieAndEsther.jpg" isDark />
+                    <WeddingPartyPerson name="Heta Jangla" relation="Helluva engineer" imgSrc="../images/weddingParty/katieAndHeta.jpg" isDark />
+                    <WeddingPartyPerson name="Gabrielle Wickizer" relation="New sister-in-law" imgSrc="../images/weddingParty/gabbyAndKatie.jpg" isDark />
+                    <WeddingPartyPerson name="Gen Wickizer" relation="New sister-in-law" imgSrc="../images/weddingParty/genAndKatie.png" isDark />
                 </div>
             </div>
         </div>
