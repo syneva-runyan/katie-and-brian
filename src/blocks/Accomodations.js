@@ -4,7 +4,7 @@ import './Accomodations.css';
 
 export default function Accomodations() {
     return (
-        <div className="contentContainer">
+        <div className="contentContainer accomodations">
             <h1 className="accomodations__title">
                 Accomodations
             </h1>
