@@ -48,7 +48,7 @@ export default function WeddingParty() {
                 </div>
                 <h2 className="h1">Bridesmaids</h2>
                 <div className="wedding-party-column">
-                    <WeddingPartyPerson name="Syneva Runyan" role="Maid of honor" relation="Katie's Sister" imgSrc="../images/weddingParty/katieAndSyneva.jpg" isDark />
+                    <WeddingPartyPerson name="Syneva Runyan" role="Maid of honor" relation="Katie's sister" imgSrc="../images/weddingParty/katieAndSyneva.jpg" isDark />
                     <WeddingPartyPerson name="Annie Kim" relation="Georgia tech" imgSrc="../images/weddingParty/katieAndAnnie.jpg" isDark />
                     <WeddingPartyPerson name="Courtney Olson" relation="CapOne life" imgSrc="../images/weddingParty/courtneyAndkatie.jpg" />
                     <WeddingPartyPerson name="Esther Kim" relation="DC roomate" imgSrc="../images/weddingParty/katieAndEsther.jpg" isDark />
