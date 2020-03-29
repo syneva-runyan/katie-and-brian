@@ -19,7 +19,8 @@
   color: #191818;
   margin-bottom: 0;
   text-align: center;
-  font-size: 23px;
+  text-transform: uppercase;
+  font-size: 21px;
 }
 
 .date a {
@@ -47,7 +48,7 @@
   }
   .date {
     padding-top: 0;
-    font-size: 1.8rem;
+    font-size: 22px;
   }
   .date a {
     white-space: pre;

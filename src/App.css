@@ -11,8 +11,9 @@
 
 .App {
   color: #2d2d2d;
-  font-family: 'slurrynormal';
+  font-family: 'oregon_ldo_lightregular';
   height: 100%;
+  letter-spacing: 1px;
 }
 
 .contentContainer {
@@ -23,6 +24,12 @@
 h1, .h1 {
   font-family: 'reeyregular';
   line-height: 1.5;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'oregon_ldo_lightregular';
+  margin-bottom: 0;
 }
 
 a {
