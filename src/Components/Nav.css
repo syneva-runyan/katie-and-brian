@@ -13,8 +13,10 @@
 .navItem {
     color: #000;
     flex-grow: 1;
+    font-size: 14px;
     text-decoration: none;
     transition: 0.25s all;
+    text-transform: uppercase;
 }
 
 .navItem:hover {
@@ -84,7 +86,7 @@
         right: 0;
     }
     .navItem {
-        font-size: 24px;
+        font-size: 19px;
         padding: 15px 0;
     }
 

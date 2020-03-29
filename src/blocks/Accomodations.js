@@ -9,7 +9,7 @@ export default function Accomodations() {
                 Accomodations
             </h1>
             <h2>Hotel Block</h2>
-            <p>We have a block of rooms reserved at the <a href="https://secure3.hilton.com/en_US/hi/reservation/book.htm?inputModule=HOTEL&ctyhocn=ATLPGHH&spec_plan=RWB&arrival=20200904&departure=20200906&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a><br/><br/>
+            <p>We have a block of rooms reserved at the <a href="https://secure3.hilton.com/en_US/hi/reservation/book.htm?inputModule=HOTEL&ctyhocn=ATLPGHH&spec_plan=RWB&arrival=20200904&departure=20200906&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a><br/>
             Rates are $119 per night for either 1 King bed or 2 Queen beds. The hotel is a 5 min drive from the church and a 10 min drive from the reception venue.<br/><br/>
             Transportation will be provided to and from the hotel and the reception.
             </p>

@@ -36,6 +36,8 @@ p.ourStory__content {
 }
 .ourStory__title {
     font-family: 'reeyregular';
+    text-transform: none;
+    margin-bottom: 15px;
 }
 .react-parallax  {
     width: 35%;
