@@ -10,49 +10,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'slurrynormal';
-    src: url('slurry-webfont.woff2') format('woff2'),
-         url('slurry-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'caladeabold';
-    src: url('caladea-bold-webfont.woff2') format('woff2'),
-         url('caladea-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'caladeabold_italic';
-    src: url('caladea-bolditalic-webfont.woff2') format('woff2'),
-         url('caladea-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'caladeaitalic';
-    src: url('caladea-italic-webfont.woff2') format('woff2'),
-         url('caladea-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 
 
@@ -65,120 +22,10 @@
 }
 
 
-
-
-@font-face {
-    font-family: 'oregon_ldobold_oblique';
-    src: url('oregon_ldo_bold_oblique-webfont.woff2') format('woff2'),
-         url('oregon_ldo_bold_oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldobold';
-    src: url('oregon_ldo_bold-webfont.woff2') format('woff2'),
-         url('oregon_ldo_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldo_demiboldoblique';
-    src: url('oregon_ldo_demibold_oblique-webfont.woff2') format('woff2'),
-         url('oregon_ldo_demibold_oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldo_demiboldregular';
-    src: url('oregon_ldo_demibold-webfont.woff2') format('woff2'),
-         url('oregon_ldo_demibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldo_lightoblique';
-    src: url('oregon_ldo_light_oblique-webfont.woff2') format('woff2'),
-         url('oregon_ldo_light_oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
 @font-face {
     font-family: 'oregon_ldo_lightregular';
     src: url('oregon_ldo_light-webfont.woff2') format('woff2'),
          url('oregon_ldo_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldo_mediumoblique';
-    src: url('oregon_ldo_medium_oblique-webfont.woff2') format('woff2'),
-         url('oregon_ldo_medium_oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldo_mediumregular';
-    src: url('oregon_ldo_medium-webfont.woff2') format('woff2'),
-         url('oregon_ldo_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldooblique';
-    src: url('oregon_ldo_oblique-webfont.woff2') format('woff2'),
-         url('oregon_ldo_oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'oregon_ldoregular';
-    src: url('oregon_ldo-webfont.woff2') format('woff2'),
-         url('oregon_ldo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
