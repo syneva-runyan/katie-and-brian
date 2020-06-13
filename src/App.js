@@ -30,7 +30,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="covidBanner">
-            <NavLink to="covid-19">COVID19 Updates</NavLink>
+            <NavLink to="covid-19">COVID-19 Updates</NavLink>
         </div>
         <Switch>
           <Route path="/event-info">
