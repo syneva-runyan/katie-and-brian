@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+body {
+  /* for the covid banner */
+  margin-top: 32px;
+}
+
 .App {
   color: #2d2d2d;
   font-family: 'oregon_ldo_lightregular';
@@ -26,7 +31,7 @@ h1, .h1 {
   line-height: 1.5;
 }
 
-h2 {
+h2, .h2 {
   text-transform: uppercase;
   font-family: 'oregon_ldo_lightregular';
   margin-bottom: 0;
@@ -47,6 +52,23 @@ p {
   font-family: 'caladearegular';
   font-size: 17px;
   line-height: 1.8rem;
+}
+
+.covidBanner {
+  color: white;
+  position: fixed;
+  background: #4285ff;
+  width: 100%;
+  padding: 6px 12px;
+  top: 0;
+  box-shadow: 1px 1px 1px 1px #d0cfcf;
+  z-index: 3;
+}
+
+.covidBanner a {
+  color: white;
+  display: flex;
+  flex: 1;
 }
 
 /** fix router to bottom on home page**/

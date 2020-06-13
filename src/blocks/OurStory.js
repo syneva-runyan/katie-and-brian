@@ -9,7 +9,7 @@ export default class OurStory extends Component {
     render() {
         return (
             <div className="ourStory">
-                <h2 className="ourStory__title ourStory__content">Our story began in Washington, DC</h2>
+                <h2 className="ourStory__title ourStory__content">Our story began in Washington, DC...</h2>
 
                 <Parallax
                     bgImage={require('../images/coffeeMeetBagel.png')}
