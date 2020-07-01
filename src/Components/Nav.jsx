@@ -31,13 +31,13 @@ class Carousel extends Component {
                 <span onClick={this.toggleMenu} className={`${mobileExpandedBackground} navBackground`} />
                 <div className={`nav ${mobileExpandedClass} ${this.props.alwaysExpanded && 'alwaysOpen'}`}>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem navItem--home" to="/">K&B</NavLink>
+                    <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/rsvp">RSVP</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/our-story">Our Story</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/event-info">Event Info</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/accomodations">Accomodations</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/wedding-party">Wedding Party</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/registry">Registry</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/photos">Photos</NavLink>
-                    <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/things-to-do">Things to do in PTC</NavLink>
                 </div>
                 <button className={`navMobileCTA ${this.props.alwaysExpanded && 'alwaysOpen'}`} onClick={this.toggleMenu}>cta</button>
             </div>

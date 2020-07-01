@@ -1,0 +1,60 @@
+.rsvp-lookup {
+    text-align: center;
+}
+
+.rsvp-lookup__form {
+    padding: 0 15px;
+}
+
+.rsvp-lookup__btn {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    padding: 12px 20px;
+    background: #2fb8f8;
+    margin: 5px;
+}
+
+/* floating code modified from: https://codepen.io/elujambio/pen/yjwzGP */
+.floating-label {
+    display: inline-block;
+    position:  relative; 
+    margin-bottom:  10px; 
+}
+
+.floating-label label {
+    position:  absolute; 
+    top: calc(50% - 7px);
+    left:  0; 
+    opacity:  0; 
+    transition:  all .3s ease; 
+}
+
+.floating-label input {
+    padding: 5px;
+    transition: 0.3s all;
+}
+
+.floating-label input:not(:placeholder-shown) {
+    padding: 20px 9px 5px;
+    margin-top: 1px;
+}
+
+.floating-label input:not(:placeholder-shown) + label {
+    transform:  translateY(-10px); 
+    opacity:  .7; 
+    font-size: 12px;
+    margin-left: 9px;
+}
+
+@media (max-width:450px)  {
+    .floating-label {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .floating-label input {
+        width: 100%;
+    }
+}

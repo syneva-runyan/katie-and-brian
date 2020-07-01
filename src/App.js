@@ -5,16 +5,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Intro from './blocks/Intro';
-import EventInfo from './blocks/EventInfo';
+import { Accomodations, RSVP, Intro, EventInfo, OurStory, WeddingParty } from './blocks/index.js';
 import Nav from './Components/Nav';
 import './App.css';
 import MasonryGrid from './Components/MasonryGrid';
 import shuffle from 'shuffle-array';
 import ComingSoon from './Components/ComingSoon';
-import OurStory from './blocks/OurStory';
-import Accomodations from './blocks/Accomodations';
-import WeddingParty from './blocks/WeddingParty';
+
 import Covid19 from './blocks/Covid19';
 
 // example photo gallery images
@@ -33,6 +30,10 @@ function App() {
             <NavLink to="covid-19">COVID-19 Updates</NavLink>
         </div>
         <Switch>
+          <Route path="/rsvp">
+            <Nav/>
+            <RSVP />
+          </Route>
           <Route path="/event-info">
             <Nav />
             <EventInfo />
