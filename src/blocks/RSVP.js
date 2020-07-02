@@ -1,8 +1,8 @@
 import React from "react";
-import Lookup from "../Components/RSVP/Lookup";
+import RSVPIndex from "../Components/RSVP";
 
 export default function() {
     return (
-        <Lookup />
+        <RSVPIndex />
     );
 }

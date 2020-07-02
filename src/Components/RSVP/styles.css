@@ -7,24 +7,44 @@
 }
 
 .rsvp-lookup__btn {
+    display: block;
     border: none;
-    border-radius: 0;
     color: #fff;
     font-size: 16px;
-    outline: none;
-    padding: 12px 20px;
-    background: #2fb8f8;
-    margin: 5px;
+    padding: 9px 20px;
+    background: #348080;
+    border-radius: 2px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.rsvp-lookup__inputs{
+    padding: 24px 0 48px;
+}
+
+.rsvp-lookup__btn:hover {
+    cursor: pointer;
+    background: #1b6161;
+}
+
+.rsvp-lookup__helper {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    margin-top: 12px;
 }
 
 /* floating code modified from: https://codepen.io/elujambio/pen/yjwzGP */
 .floating-label {
     display: inline-block;
     position:  relative; 
-    margin-bottom:  10px; 
+    margin-bottom:  24px; 
+    margin-left: 10px;
+    margin-right:  10px;
 }
 
 .floating-label label {
+    color: #348080;
     position:  absolute; 
     top: calc(50% - 7px);
     left:  0; 
@@ -35,6 +55,11 @@
 .floating-label input {
     padding: 5px;
     transition: 0.3s all;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    outline: none;
+    width: 100%;
 }
 
 .floating-label input:not(:placeholder-shown) {
@@ -47,6 +72,7 @@
     opacity:  .7; 
     font-size: 12px;
     margin-left: 9px;
+    top: 10px;
 }
 
 @media (max-width:450px)  {
