@@ -3,10 +3,6 @@ const {google} = require('googleapis');
 var stringSimilarity = require('string-similarity');
 
 const credentials = {
-  "apiKey": "AIzaSyDDXqfMalj2Xi-TTdTnyn16jdVD9xDw02s",
-  "discoveryDocs": 
-      ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
-  "spreadsheetId": "1-C0ixsVql50BPzoOXf-_huHlnKgw42kV2mLAFRbmxos"
 }
 
 

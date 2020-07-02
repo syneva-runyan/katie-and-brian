@@ -18,6 +18,13 @@
     margin: auto;
 }
 
+.rsvp-lookup__suggestion {
+    background: none;
+    border: 0;
+    color: #348080;
+    padding: 0;
+}
+
 .rsvp-lookup__inputs{
     padding: 24px 0 48px;
 }
