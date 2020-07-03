@@ -71,6 +71,12 @@ p {
   flex: 1;
 }
 
+li {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+
 /** fix router to bottom on home page**/
 @media (min-width: 651px) {
   .intro ~ .navWrapper {
