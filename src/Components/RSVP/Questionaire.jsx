@@ -33,7 +33,7 @@ function GuestDetails({ guestsAttending }) {
 }
 
 export default function Questionaire({ guestInfo, setGuestResponses }) {
-    const [guestsAttending, setGuestsAttending] = useState(parseInt(guestInfo[3]));
+    const [guestsAttending, setGuestsAttending] = useState(parseInt(guestInfo[4]));
     const history = useHistory();
     const formEl = useRef(null);
 
@@ -77,7 +77,7 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
                         How many guests will be attending?
                     </label>
                     <select className="select" value={guestsAttending} name="guestsAttending" onChange={(e) => setGuestsAttending(e.target.value)}>
-                        {([...Array(parseInt(guestInfo[3]) + 1).keys() ]).map(i => (
+                        {([...Array(parseInt(guestInfo[4]) + 1).keys() ]).map(i => (
                             <option value={i} key={i}>{i}</option>
                         ))}
                     </select>
