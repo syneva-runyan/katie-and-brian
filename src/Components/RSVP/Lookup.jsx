@@ -3,7 +3,7 @@ import { lookup } from './api'
 
 import './styles.css';
 
-export default function Lookup() {
+export default function Lookup({ setGuestInfo }) {
     const [addressee, setAddressee] = useState("");
     const [suggestion, setSuggestion] = useState("");
 
@@ -12,7 +12,7 @@ export default function Lookup() {
         const invite = await lookup(addressee);
         if (invite && invite.guestData) {
             if(invite.guestData.match) {
-
+                setGuestInfo(invite.guestData.match);
             } else if(invite.guestData.suggestion) {
                 setSuggestion(invite.guestData.suggestion[2]);
             }
@@ -23,7 +23,8 @@ export default function Lookup() {
         setAddressee(e.target.value)
     }
 
-    const lookupSuggestion = () => {
+    const lookupSuggestion = (e) => {
+        e.preventDefault();
         setAddressee(suggestion);
         lookupRSVP();
     }

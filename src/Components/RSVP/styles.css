@@ -56,7 +56,8 @@
     top: calc(50% - 7px);
     left:  0; 
     opacity:  0; 
-    transition:  all .3s ease; 
+    transition:  all .3s ease;
+    pointer-events: none;
 }
 
 .floating-label input {
@@ -69,7 +70,7 @@
     width: 100%;
 }
 
-.floating-label input:not(:placeholder-shown) {
+.floating-label input:not(:placeholder-shown):not(.guestName) {
     padding: 20px 9px 5px;
     margin-top: 1px;
 }

@@ -36,7 +36,7 @@ class Carousel extends Component {
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/event-info">Event Info</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/accomodations">Accomodations</NavLink>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/wedding-party">Wedding Party</NavLink>
-                    <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/registry">Registry</NavLink>
+                    <a href="https://www.zola.com/registry/katie-and-brian" target="blank" className="navItem" rel="noopener noreferrer">Registry</a>
                     <NavLink onClick={this.closeMenu} activeClassName="navItem--active" className="navItem" to="/photos">Photos</NavLink>
                 </div>
                 <button className={`navMobileCTA ${this.props.alwaysExpanded && 'alwaysOpen'}`} onClick={this.toggleMenu}>cta</button>
