@@ -11,7 +11,6 @@ import './App.css';
 import MasonryGrid from './Components/MasonryGrid';
 import shuffle from 'shuffle-array';
 import ComingSoon from './Components/ComingSoon';
-
 import Covid19 from './blocks/Covid19';
 
 // example photo gallery images
