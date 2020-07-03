@@ -1,12 +1,10 @@
-const fs = require('fs');
 const {google} = require('googleapis');
 var stringSimilarity = require('string-similarity');
 
-const credentials = {
-}
+const credentials = {}
 
 
-exports.handler = async (event, context, callback) => {
+exports.handler = async (event = {}, context, callback = console.log) => {
   let guest = null;
   if (event.queryStringParameters && event.queryStringParameters.guest) {
     console.log("Received name: " + event.queryStringParameters.guest);
@@ -40,6 +38,7 @@ if(guest == null){
       input: event
     })
   });
+  return;
 }
   // Load client secrets from a local file.
   const guestData = await new Promise(function (resolve, reject) {
@@ -54,9 +53,10 @@ if(guest == null){
       'Access-Control-Allow-Origin': 'http://localhost:3000/rsvp'
     },
   });
+  return;
 }
 
-function cleanContact(contact) {
+function cleanContact(contact = "") {
   contact = contact.toLowerCase();
   contact = contact.replace("&", "");
   contact = contact.replace("and", "");
