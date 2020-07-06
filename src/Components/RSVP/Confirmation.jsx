@@ -25,6 +25,7 @@ export default function({ guestInfo, guestResponses}) {
                     </em>
                 </p>
             </div>
+            <span className="backgroundFlower3" />
         </div>
     )
 }

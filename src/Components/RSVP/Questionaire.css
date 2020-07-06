@@ -60,9 +60,18 @@
     margin-left: 12px;
 }
 
+.error {
+    color: #c30f0f;
+    font-size: 16px;
+    margin: 0;
+}
+
 @media (max-width:450px)  {
     .guest_details {
         margin-bottom: 48px;
         text-align: left;
+    }
+    .questionaire {
+        padding: 15px;
     }
 }

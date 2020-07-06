@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { saveResponse } from './api';
 
-
 import './Questionaire.css';
 
 function GuestDetails({ guestsAttending }) {
@@ -33,6 +32,7 @@ function GuestDetails({ guestsAttending }) {
 }
 
 export default function Questionaire({ guestInfo, setGuestResponses }) {
+    const [formErrors, setErrors] = useState([]);
     const [guestsAttending, setGuestsAttending] = useState(parseInt(guestInfo[4]));
     const history = useHistory();
     const formEl = useRef(null);
@@ -55,16 +55,33 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
         return object;
     }
 
+    const isValid = data => {
+        let errors = [];
+        Object.keys(data).forEach(key => {
+            if(data[key] === "" || data[key] == null) {
+                errors.push(key);
+            }
+        });
+
+        return errors;
+    }
+
     const accept = async (e) => {
         e.preventDefault();
         if(formEl.current) {
             const data = getData();
-            setGuestResponses(data);
-            await saveResponse({
-                guestName: guestInfo[2],
-                attending: true,
-                ...data,
-            });
+            const errors = isValid(data);
+            if(errors.length === 0) {
+                setGuestResponses(data);
+                await saveResponse({
+                    guestName: guestInfo[2],
+                    attending: true,
+                    ...data,
+                });
+            } else {
+                setErrors(errors);
+                return;
+            }
         }
         history.push("/rsvp/accept-confirmation");
     }
@@ -76,13 +93,17 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
                     <label htmlFor="guestsAttending">
                         How many guests will be attending?
                     </label>
-                    <select className="select" value={guestsAttending} name="guestsAttending" onChange={(e) => setGuestsAttending(e.target.value)}>
+                    <select className="select" value={guestsAttending} name="guestsAttending" onChange={(e) => { 
+                        setGuestsAttending(e.target.value);
+                        setErrors([]);
+                    }}>
                         {([...Array(parseInt(guestInfo[4]) + 1).keys() ]).map(i => (
                             <option value={i} key={i}>{i}</option>
                         ))}
                     </select>
                 </div>
                 {parseInt(guestsAttending) > 0 && <GuestDetails guestsAttending={guestsAttending} />}
+                {formErrors.length > 0 ? <p class="error">Please answer all questions.</p> : null}
                 <div className="guestDetailsCTAs">
                     <div className="declineBtn">
                         <button className="rsvp-lookup__btn" type="submit" onClick={decline}>Decline</button>
