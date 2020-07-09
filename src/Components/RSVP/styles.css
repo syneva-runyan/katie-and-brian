@@ -100,7 +100,7 @@
     }
     .floating-label input {
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
     }
     .rsvp-lookup__btn {
         padding: 14px 24px;
@@ -108,5 +108,9 @@
     }
     .backgroundFlower3 {
         right: 15px;
+    }
+    
+    .rsvp-lookup__helper {
+        font-size: 14px;
     }
 }

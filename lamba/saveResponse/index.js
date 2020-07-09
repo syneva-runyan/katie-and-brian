@@ -1,22 +1,4 @@
-const AWS = require('aws-sdk');
-const querystring = require('querystring');
-
-// Set this to the region you upload the Lambda function to.
-AWS.config.region = 'us-esat-1';
-
-exports.handler = function(evt, context, callback) {
-    // Our raw request body will be in evt.body.
-    const params = querystring.parse(evt.body);
-
-    // Our field from the request.
-    const my_field = params['my-field'];
-
-    // Generate HTML.
-    const html = `<!DOCTYPE html><p>You said: ` + my_field + `</p>`;
-
-    // Return HTML as the result.
-    callback(null, html);
-};var AWS = require('aws-sdk');
+var AWS = require('aws-sdk');
 
 exports.handler = async (event, context, call) => {
     event = event.queryStringParameters;
@@ -46,6 +28,8 @@ exports.handler = async (event, context, call) => {
             })
         }
         
+        sendConfirmationEmail(event)
+        
         return res; 
 
     } catch (error){
@@ -61,3 +45,63 @@ exports.handler = async (event, context, call) => {
         return fail;
     }
 };
+
+function sendConfirmationEmail(guestResponse = {}) {
+      const htmlBody = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+      </head>
+      <body>
+        <p>New Reservation from ${guestResponse.guestName},</p>
+        <p>Attending? ${guestResponse.attending ? 'Yes' : 'No'}.</p>
+        <p>Guest count: ${guestResponse.guestsAttending}</p>
+      </body>
+    </html>
+  `;
+
+  const textBody = `
+    New Reservation from ${guestResponse.guestName},
+    Attending? ${guestResponse.attending ? 'Yes' : 'No'}.  Guest count: ${event.guestsAttending}
+  `;
+
+  // Create sendEmail params
+  const params = {
+    Destination: {
+      ToAddresses: ['syneva@gmail.com']
+    },
+    Message: {
+      Body: {
+        Html: {
+          Charset: "UTF-8",
+          Data: htmlBody
+        },
+        Text: {
+          Charset: "UTF-8",
+          Data: textBody
+        }
+      },
+      Subject: {
+        Charset: "UTF-8",
+        Data: "Wedding RSVP!"
+      }
+    },
+    Source: "Katie and Brians Site <syneva@gmail.com>"
+  };
+
+  // Create the promise and SES service object
+  const sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+    .sendEmail(params)
+    .promise();
+
+  // Handle promise's fulfilled/rejected states
+  sendPromise
+    .then(data => {
+      console.log(data.MessageId);
+      context.done(null, "Success");
+    })
+    .catch(err => {
+      console.error(err, err.stack);
+      context.done(null, "Failed");
+    });
+}

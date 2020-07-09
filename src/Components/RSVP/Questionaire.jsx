@@ -91,7 +91,7 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
             <form ref={formEl}>
                 <div className="guestAttendingContainer">
                     <label htmlFor="guestsAttending">
-                        How many guests will be attending? (including yourself)
+                        Guests attending (including yourself)
                     </label>
                     <select className="select" value={guestsAttending} name="guestsAttending" onChange={(e) => { 
                         setGuestsAttending(e.target.value);
