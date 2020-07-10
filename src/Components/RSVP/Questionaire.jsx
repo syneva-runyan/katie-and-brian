@@ -39,8 +39,9 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
 
     const decline = async (e) => {
         e.preventDefault();
+        const guestName = guestInfo[2] && guestInfo[2].replace("&", "and");
         await saveResponse({
-            guestName: guestInfo[2],
+            guestName,
             attending: false,
         });
         history.push("/rsvp/decline-confirmation");
@@ -73,8 +74,9 @@ export default function Questionaire({ guestInfo, setGuestResponses }) {
             const errors = isValid(data);
             if(errors.length === 0) {
                 setGuestResponses(data);
+                const guestName = guestInfo[2] && guestInfo[2].replace("&", "and");
                 await saveResponse({
-                    guestName: guestInfo[2],
+                    guestName,
                     attending: true,
                     ...data,
                 });
