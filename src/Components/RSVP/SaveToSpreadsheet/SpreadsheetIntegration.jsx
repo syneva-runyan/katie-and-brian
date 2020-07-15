@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactGoogleSheets from '../../../utils/react-google-sheets';
+// import ReactGoogleSheets from '../../../utils/react-google-sheets';
 var stringSimilarity = require('string-similarity');
 
 
@@ -114,35 +114,38 @@ class DataComponent extends Component {
   }
 
   render() {
-    return (
-      <ReactGoogleSheets 
-        clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-        apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
-        spreadsheetId={'1-C0ixsVql50BPzoOXf-_huHlnKgw42kV2mLAFRbmxos'}
-        afterLoading={() => this.setState({sheetLoaded: true})}
-      >
-        {this.state.sheetLoaded ? 
-          <div  style={{marginBottom: '30px'}}>
-            {/* Access Data */}
-            {/* Update Data */}
-            <button
-                disabled={this.state.updatingSpreadsheet}
-                onClick={() => {
-                    this.updateRSVPS(this.props.batchUpdateCell, this.props.getSheetsData('Guest List'));
-                }}>
-                    Update RSVP Spreadsheet
-            </button>
-            {this.state.error && <span style={{paddingLeft: '15px'}}>Something went wrong, refresh the page.</span>}
-            {this.state.updateSuccess && <span style={{paddingLeft: '15px'}}>Successfully updated!</span>}
-            <br/><br/>
-            <a href="https://docs.google.com/spreadsheets/d/1-C0ixsVql50BPzoOXf-_huHlnKgw42kV2mLAFRbmxos/edit?usp=sharing" target="blank" rel="noopener">Go to spreadsheet</a>
-          </div>
-          :
-          'Loading google spreadsheet...'
-        }
-      </ReactGoogleSheets>
-    )
+      return (
+          <p>Spreadsheet Integration coming soon</p>
+      )
+    // return (
+    //   <ReactGoogleSheets 
+    //     clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+    //     apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+    //     spreadsheetId={'1-C0ixsVql50BPzoOXf-_huHlnKgw42kV2mLAFRbmxos'}
+    //     afterLoading={() => this.setState({sheetLoaded: true})}
+    //   >
+    //     {this.state.sheetLoaded ? 
+    //       <div  style={{marginBottom: '30px'}}>
+    //         {/* Access Data */}
+    //         {/* Update Data */}
+    //         <button
+    //             disabled={this.state.updatingSpreadsheet}
+    //             onClick={() => {
+    //                 this.updateRSVPS(this.props.batchUpdateCell, this.props.getSheetsData('Guest List'));
+    //             }}>
+    //                 Update RSVP Spreadsheet
+    //         </button>
+    //         {this.state.error && <span style={{paddingLeft: '15px'}}>Something went wrong, refresh the page.</span>}
+    //         {this.state.updateSuccess && <span style={{paddingLeft: '15px'}}>Successfully updated!</span>}
+    //         <br/><br/>
+    //         <a href="https://docs.google.com/spreadsheets/d/1-C0ixsVql50BPzoOXf-_huHlnKgw42kV2mLAFRbmxos/edit?usp=sharing" target="blank" rel="noopener">Go to spreadsheet</a>
+    //       </div>
+    //       :
+    //       'Loading google spreadsheet...'
+    //     }
+    //   </ReactGoogleSheets>
+    // )
   }
 }
 
-export default ReactGoogleSheets.connect(DataComponent);
+export default DataComponent
