@@ -55,3 +55,29 @@ export const saveResponse = async(formData) => {
 
     return resp;
 }
+
+// get rsvps
+export const getRSVPS = async() => {
+    var xhr = new XMLHttpRequest();
+
+    
+    const resp = await new Promise((resolve, reject) => {
+        xhr.open("GET", constants.GET_RSVPS_ENDPOINT);
+        xhr.onload = function() {
+            if (xhr.status !== 200) { // analyze HTTP status of the response
+              reject(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+            } else { // show the result
+                try {
+                    const data = JSON.parse(this.responseText);
+                    resolve(data); // response is the server
+                } catch(e) {
+                    reject('Error parsing response')
+                }
+            }
+          };
+        
+        xhr.send();
+    });
+
+    return resp;
+}
