@@ -13,6 +13,8 @@ import shuffle from 'shuffle-array';
 import ComingSoon from './Components/ComingSoon';
 import Covid19 from './blocks/Covid19';
 
+import SeeRSVPs from './blocks/SeeRSVPs';
+
 // example photo gallery images
 let images = [];
 for(let i = 0; i<= 40; i++){
@@ -64,6 +66,9 @@ function App() {
           <Route path="/covid-19">
             <Nav />
             <Covid19 />
+          </Route>
+          <Route path="/see-rsvps">
+            <SeeRSVPs />
           </Route>
           <Route exact path="">
             <Intro />
