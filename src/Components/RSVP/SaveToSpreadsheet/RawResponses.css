@@ -1,6 +1,10 @@
 .rawResponses {
     padding: 30px 0;
 }
+
+.rawResponses li {
+    list-style-type: none;
+}
 .rawResponses__loader {
     font-family: 'oregon_ldo_lightregular';
 }
