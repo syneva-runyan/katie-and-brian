@@ -18,7 +18,14 @@ function GoogleSheetConnector(options, onLoad) {
 
     this.initialise();
 
-    this.getSheetsData = function () {
+    this.getSheetsData = function (sheetName) {
+        if(sheetName) {
+            for (let sheet of sheetsData) {
+                if (sheet.name === sheetName) {
+                    return sheet;
+                }
+            }
+        }
         return sheetsData.slice();
     };
 

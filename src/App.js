@@ -70,7 +70,7 @@ function App() {
           <Route path="/see-rsvps">
             <SeeRSVPs />
           </Route>
-          <Route exact path="">
+          <Route exact path="/">
             <Intro />
             <Nav alwaysExpanded />
           </Route>

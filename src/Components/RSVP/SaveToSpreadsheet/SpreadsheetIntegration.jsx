@@ -16,7 +16,7 @@ class DataComponent extends Component {
     }
 
     getSpreadsheetNames(spreadsheetData) {
-        return spreadsheetData[0].data.map(data => {
+        return spreadsheetData.data.map(data => {
             const name = data[2];
             return name && name.replace("&", "and");
         });

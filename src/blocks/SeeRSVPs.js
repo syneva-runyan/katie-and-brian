@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { getRSVPS } from '../Components/RSVP/api';
-import ReactGoogleSheets from 'react-google-sheets';
 import SpreadsheetIntegration from '../Components/RSVP/SaveToSpreadsheet/SpreadsheetIntegration';
 import RawResponses from '../Components/RSVP/SaveToSpreadsheet/RawResponses';
 
-class DataComponent extends Component {
+export default class DataComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -24,5 +23,3 @@ class DataComponent extends Component {
     )
   }
 }
-
-export default ReactGoogleSheets.connect(DataComponent);
