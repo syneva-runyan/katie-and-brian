@@ -1,0 +1,34 @@
+.live_stream h1 {
+    text-align: center;
+}
+
+.live_stream_image {
+    position: relative;
+    text-align: center;
+}
+
+.live_stream_image img {
+    width: 80%;
+}
+
+.live_stream_main_block {
+    background-color: #e6e6e6;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.live_stream_content {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.main-text {
+    font-family: 'oregon_ldo_lightregular';
+    font-size: 25px;
+}
+
+@media screen and (max-width: 450px) {
+    .live_stream_image img {
+        width: 100%;
+    }
+}
