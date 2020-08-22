@@ -9,6 +9,7 @@
 
 .live_stream_image img {
     width: 80%;
+    max-width: 550px;
 }
 
 .live_stream_main_block {
@@ -20,6 +21,8 @@
 .live_stream_content {
     text-align: center;
     padding-bottom: 35px;
+    max-width: 550px;
+    margin: auto;
 }
 
 .main-text {
