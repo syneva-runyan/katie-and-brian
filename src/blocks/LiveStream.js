@@ -1,4 +1,5 @@
 import React from 'react';
+import Countdown from 'react-countdown';
 
 import './LiveStream.css';
 
@@ -19,15 +20,18 @@ const LiveStream = function () {
                 <a target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.youtube.com/channel/UC1ee7lmibIVuUQhMuqyCgrQ" >
-                    Holy Trinity's youtube channel.
-                </a>
+                    Holy Trinity's youtube channel</a> in
+                    <Countdown
+                        date={new Date('2020-09-05T17:00+00:00')} //UTC
+                        intervalDelay={0}
+                        renderer={props => <div>
+                            {props.days > 0 && `${props.days} days`} {props.hours} hours {props.minutes} minutes {props.seconds} seconds</div>}
+                    />
                 </strong>
             </p>
              <p>
                 If attending virtually, you are encouraged to hashtag a picture of yourself watching with 
-                <strong> #betterWickYou </strong>
-                <br /><br/>
-                Information about various zoom watch parties will be posted on this page closer to the wedding. 
+                <strong> #betterWickYou </strong> or email the picture to syneva@gmail.com.
             </p>
         </div>
     </div>);

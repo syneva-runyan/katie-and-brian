@@ -24,7 +24,8 @@ class EventInfo extends Component {
                                 <strong>Ceremony</strong>
                                 <br/> 
                                 <span className="eventInfoDetailsText">
-                                    <a href="http://www.holytrinityparish.net/"  target="_blank" rel="noreferrer noopener">Holy Trinity Catholic Church</a>
+                                    <a href="https://www.youtube.com/channel/UC1ee7lmibIVuUQhMuqyCgrQ"  target="_blank" rel="noreferrer noopener">Live Stream</a><br/>
+                                    <a href="https://www.holytrinityptc.org/"  target="_blank" rel="noreferrer noopener">Holy Trinity Catholic Church</a>
                                     <br/>
                                     1pm
                                 </span>
@@ -57,8 +58,9 @@ class EventInfo extends Component {
                                 <strong>Transportation</strong>
                                 <br/>
                                 <span className="eventInfoDetailsText">
-                                    Transportation will be provided to and from the{" "}
-                                    <a href="https://secure3.hilton.com/en_US/hi/reservation/book.htm?inputModule=HOTEL&ctyhocn=ATLPGHH&spec_plan=RWB&arrival=20200904&departure=20200906&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a>{" "}
+                                    Transportation will be provided between and from the{" "}
+                                    <a href="https://secure3.hilton.com/en_US/hi/reservation/book.htm?inputModule=HOTEL&ctyhocn=ATLPGHH&spec_plan=RWB&arrival=20200904&departure=20200906&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" rel="noreferrer noopener">Peachtree City Hotel and Conference Center</a>,{" "}
+                                    <a href="https://www.holytrinityptc.org/" target="_blank" rel="noreferrer noopener">Holy Trinity</a>,
                                     and <a href="https://www.daisyhillvenue.com/"  target="_blank" rel="noreferrer noopener">Daisy Hill</a>
                                 </span>
                             </p>
