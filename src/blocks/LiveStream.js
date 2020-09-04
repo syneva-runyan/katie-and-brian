@@ -20,7 +20,7 @@ const LiveStream = function () {
                 <a target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.youtube.com/channel/UC1ee7lmibIVuUQhMuqyCgrQ" >
-                    Holy Trinity's youtube channel.</a> 
+                    Holy Trinity's youtube channel.</a> at 1pm EST on Sept 5, 2020.
                     {/* in
                     <Countdown
                         date={new Date('2020-09-05T17:00+00:00')} //UTC
