@@ -20,13 +20,21 @@ const LiveStream = function () {
                 <a target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.youtube.com/channel/UC1ee7lmibIVuUQhMuqyCgrQ" >
-                    Holy Trinity's youtube channel</a> in
+                    Holy Trinity's youtube channel.</a> 
+                    {/* in
                     <Countdown
                         date={new Date('2020-09-05T17:00+00:00')} //UTC
                         intervalDelay={0}
-                        renderer={props => <div>
-                            {props.days > 0 && `${props.days} days`} {props.hours} hours {props.minutes} minutes {props.seconds} seconds</div>}
-                    />
+                        renderer={props => {
+                            const daysText = props.days > 0 && `${props.days} day` || '';
+                        return (
+                            <div>
+                                {props.total > 0 ?
+                                `${daysText} ${props.hours} hours ${props.minutes} minutes ${props.seconds} seconds` :
+                                'Now!!'}
+                            </div>);
+                        }}
+                    /> */}
                 </strong>
             </p>
              <p>
